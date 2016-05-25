@@ -1,0 +1,10 @@
+doctype
+html
+	head
+	body
+		a(href='/') homepage
+		h1 All messages
+		each message in messages
+			ul
+				li Title: #{message.title}
+				li Message: #{message.body}

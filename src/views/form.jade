@@ -1,0 +1,13 @@
+doctype html
+html
+	head
+	body
+		a(href='/') homepage
+		h1 On this page you can add a new message
+	form(method="POST", action="/postnewmessage")
+		p Title
+			input(type="text", name="msgtitle")
+		p Text/body
+			input(type="text", name="newmessage")
+		p
+			input(type="submit" name="add message")
